@@ -1,0 +1,10 @@
+{
+  "name": "merlin-vs-alfonso",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "node node/build.js"
+  },
+  "devDependencies": {
+    "uglify-js": "^3.17.4"
+  }
+}
