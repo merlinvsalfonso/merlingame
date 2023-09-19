@@ -3,6 +3,7 @@ var levelNames = ['bridge', 'courtyard', 'cellar', 'garrison', 'hall', 'chapel',
 var currentLevel = 0;
 
 setWindowVariables();
+requestAnimationFrame(tickLevel);
 
 // Progress to next level in array.
 function nextLevel() {
@@ -19,7 +20,6 @@ function nextLevel() {
 // Starts the level.
 function startLevel(levelName, lost) {
   level = Level(levelName, lost);
-  requestAnimationFrame(tickLevel);
 }
 
 // Renders level and manages updates. Main animation loop.
